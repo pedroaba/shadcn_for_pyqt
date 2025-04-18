@@ -25,10 +25,7 @@ class Preview(QMainWindow):
             if item.widget():
                 item.widget().setParent(None)
 
-        self.layout.addStretch(1)
-
-        self.layout.addWidget(widget, alignment=Qt.AlignmentFlag.AlignCenter)
-        self.layout.addStretch(1)
+        self.layout.addWidget(widget, stretch=1)
 
 
 class PreviewApplication(QApplication):
